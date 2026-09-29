@@ -21,7 +21,9 @@ img {
 }
 
 
-/* SECTION 1 */
+/* =========================================================
+   SECTION 1
+   ========================================================= */
 
 .section1 {
   width: 100%;
@@ -173,8 +175,9 @@ img {
 }
 
 
-/* SECTION 2 */
-
+/* =========================================================
+   SECTION 2
+   ========================================================= */
 
 .section2 {
   width: 100%;
@@ -245,8 +248,9 @@ img {
 }
 
 
-/* SECTION 3 */
-
+/* =========================================================
+   SECTION 3
+   ========================================================= */
 
 .hydration-section {
   padding-top: 60px;
@@ -327,8 +331,9 @@ img {
 }
 
 
-/* SECTION 4 */
-
+/* =========================================================
+   SECTION 4
+   ========================================================= */
 
 .about-section {
   display: flex;
@@ -391,8 +396,9 @@ img {
 }
 
 
-/* SECTION 5 */
-
+/* =========================================================
+   SECTION 5
+   ========================================================= */
 
 .faq-section {
   background-color: #f4f5f7;
@@ -461,7 +467,9 @@ img {
 }
 
 
-/* SECTION 6 */
+/* =========================================================
+   SECTION 6
+   ========================================================= */
 
 .contact-section {
   display: flex;
@@ -522,7 +530,9 @@ img {
 }
 
 
-/* SECTION 7 */
+/* =========================================================
+   SECTION 7
+   ========================================================= */
 
 .site-footer {
   background-color: #1a1a1a;
@@ -592,7 +602,9 @@ img {
 }
 
 
-/* On Tablets */
+/* =========================================================
+   TABLET
+   ========================================================= */
 
 @media (max-width: 900px) {
 
@@ -690,15 +702,18 @@ img {
 
   .section2-left {
     width: 100%;
-    min-height: 400px;
     height: 400px;
-    background-size: cover;
+    min-height: 0;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f4f1ef;
   }
 
   .section2-right {
     width: 100%;
     min-height: 420px;
+    height: auto;
     padding: 60px 30px;
     justify-content: center;
   }
@@ -862,7 +877,10 @@ img {
 }
 
 
-/* Mobile */
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 600px) {
 
   /* SECTION 1 */
@@ -953,20 +971,42 @@ img {
   }
 
 
-  /* SECTION 2 */
+  /* SECTION 2 - MOBILE FIX */
+
+  .section2 {
+    flex-direction: column;
+    min-height: 0;
+  }
 
   .section2-left {
-    min-height: 280px;
-    height: 280px;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: #f4f1ef;
+
+    aspect-ratio: 16 / 10;
   }
 
   .section2-right {
+    width: 100%;
     min-height: 350px;
+    height: auto;
+
     padding: 45px 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .feature-list {
+    width: 100%;
+    max-width: 400px;
     gap: 25px;
   }
 
@@ -983,6 +1023,10 @@ img {
   .feature-list span {
     font-size: 17px;
     line-height: 1.2;
+  }
+
+  .feature-bottle-2 {
+    display: none;
   }
 
 
@@ -1126,7 +1170,9 @@ img {
 }
 
 
-/* Small phones */
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
 
 @media (max-width: 380px) {
 
@@ -1156,7 +1202,8 @@ img {
   }
 
   .section2-left {
-    height: 240px;
+    height: auto;
+    aspect-ratio: 16 / 10;
   }
 
   .feature-list span {
